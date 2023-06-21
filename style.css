@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #121214;
+
+    --base-color: 194;
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+
+    --text-white: #ffffff;
+    
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    
+    min-height: 100vh;
+
+    color: var(--text-white);
+    display: grid;
+}
+
+#timer {
+    font-size: 8.8rem;
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#control {
+    background-color: var(--bg-primary-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    
+    border-radius: 9999px;
+    padding: 2.2rem 3.4rem;
+}
+
+.play svg path,
+.pause svg path,
+.stop svg path {
+    fill: var(--primary-color);
+}
+
+button {
+    width: 6.4rem;
+    height: 6.4rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+button svg {
+    width: clamp(3rem, 6.4rem, 8rem);
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    justify-self: flex-end;
+    align-self: flex-end;
+    padding: 3.2rem 4rem;
+}
