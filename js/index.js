@@ -11,7 +11,6 @@ const buttonSoundOff = document.querySelector('.sound-off')
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 
-
 const controls = Controls({
     buttonPlay,
     buttonPause,
